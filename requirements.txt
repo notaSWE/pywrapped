@@ -1,1 +1,2 @@
 Pillow>=8.4.0
+ytmusicapi>=0.22.0

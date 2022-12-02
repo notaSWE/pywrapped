@@ -21,7 +21,7 @@ I'm stubborn and like writing Python
 4. Download a cool font or two and save the .ttf file(s) in __font/__
     1. Relative path should be __font/fontname.otf__
     2. Note, I Googled and downloaded Circular into __font/CircularStd-Medium.otf__ and __font/CircularStd-Book.otf__
-    2. Update the font config in __pyinstafest.py__ (lines 15-19) if your font filenames are different!
+    2. Update the font config in __pywrapped.py__ (lines 15 and 16) if your font filenames are different!
 5. __python3 pywrapped.py takeout/yourname.json__
     1. Images will output to **img/output_unixtimestamp.png**
 

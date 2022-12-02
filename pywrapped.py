@@ -31,7 +31,7 @@ with open(filePath) as ytHistory:
 
 mostListenedTo = {}
 
-# Need to keep track of plays per song, likely in the value of mostListenedTo dictionary (store as list?)
+# Keep track of plays per song
 for item in jsonHist:
     if item['header'] == 'YouTube Music':
         metadata = item['subtitles']
@@ -103,7 +103,7 @@ def draw_songs(printCoords):
         draw_text.text(printCoords, f"{idx + 1} {toPrint}", font=wrFontBold, fill=(238, 248, 87))
         printCoords = (printCoords[0], printCoords[1] + 80)
 
-# Function to hopefully find and download an artist thumbnail using ytmusicapi
+# Function to probably maybe download an artist thumbnail using ytmusicapi
 def get_thumbnail(artistChannelString):
     yt = YTMusic('headers.json')
     artist_results = yt.get_artist(artistChannelString)
@@ -123,6 +123,7 @@ draw_artists(printCoords)
 
 # Update printCoords to account for Top Songs starting position
 printCoords = ((imWidth / 2) + 32, (imHeight / 2) + 120)
+
 songColCoords = (list(wrFont.getsize("Top Songs"))[0], list(wrFont.getsize("Top Artists"))[1])
 draw_text.text(printCoords, "Top Songs", font=wrFont, fill=(238, 248, 87))
 
@@ -131,7 +132,7 @@ printCoords = (printCoords[0], printCoords[1] + artistColCoords[1] + 40)
 
 draw_songs(printCoords)
 
-# Get and draw thumbnail in blank 540x540 box
+# Try to get and draw thumbnail in blank 540x540 box
 if topChannelId:
     try:
         artistPhoto = get_thumbnail(topChannelId)

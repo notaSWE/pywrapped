@@ -19,7 +19,7 @@ I'm stubborn and like writing Python
 3. Copy the export from step 1 into __takeout/__
     1. Relative path should be __takeout/yourname.json__ 
 4. Download a cool font or two and save the .ttf file(s) in __font/__
-    1. Relative path should be __font/fontname.ttf__
+    1. Relative path should be __font/fontname.otf__
     2. Note, I Googled and downloaded Circular into __font/CircularStd-Medium.otf__ and __font/CircularStd-Book.otf__
     2. Update the font config in __pyinstafest.py__ (lines 15-19) if your font filenames are different!
 5. __python3 pywrapped.py takeout/yourname.json__

@@ -38,6 +38,4 @@ I'm stubborn and like writing Python
 ## Notes
 
 * This is very similar to [pyinstafest](https://github.com/notaSWE/pyinstafest)
-* I still need to do some magic to download and place an artist photo
-* This will likely require use of [ytmusicapi](https://github.com/sigma67/ytmusicapi)
-* Lastly, if there are bands/artists you don't want, simply add them to the __filteredArtists__ list in __settings.py__
+* If there are bands/artists you don't want, simply add them to the __filteredArtists__ list in __settings.py__

@@ -11,6 +11,8 @@ I'm stubborn and like writing Python
 
 ## Installation/configuration
 
+0. Install and configure [ytmusicapi](https://github.com/sigma67/ytmusicapi)
+    1. Pay special attention to the setup; you __need headers.json__ in order to download artist photos!
 1. Export the json from [Google Takeout](https://takeout.google.com) - you ONLY need YouTube/YouTube music!
     1. Save the file as __yourname__.json
     ![Google Takeout 01](/img/takeout01.JPG "This is a sample output file")

@@ -103,5 +103,4 @@ if topChannelId:
     except:
         pass
 
-# bg.save(f"img/output_{int(time.time())}.png")
-bg.save(f"img/output_dev.png")
+bg.save(f"img/output_{int(time.time())}.png")
